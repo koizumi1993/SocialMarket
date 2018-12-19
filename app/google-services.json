@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "869936816752",
+    "firebase_url": "https://socialmarket-305c1.firebaseio.com",
+    "project_id": "socialmarket-305c1",
+    "storage_bucket": "socialmarket-305c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:869936816752:android:0e67b30105aeddf5",
+        "android_client_info": {
+          "package_name": "com.fundamentos.abisu.socialmarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "869936816752-1o67gvts9ntgt4rbp81kl8tjselr5318.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fundamentos.abisu.socialmarket",
+            "certificate_hash": "292e534807ef340e13dcb418223bf9fca31dd8dd"
+          }
+        },
+        {
+          "client_id": "869936816752-ta28qht1n05itmhujn5i5e1jiucpo74l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5hsSJML7nljZiXgCVYNwMyRX6mRbQT9M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "869936816752-ta28qht1n05itmhujn5i5e1jiucpo74l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

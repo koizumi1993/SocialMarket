@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryLight"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="@color/colorPrimary"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/field_nombre"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre usuario"
+                    android:imeActionId="6"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/input_redondo"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorPrimaryText"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/field_email"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/input_redondo"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorPrimaryText"/>
+
+                <EditText
+                    android:id="@+id/field_password"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:imeActionId="6"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@drawable/input_redondo"
+                    android:padding="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorPrimaryText"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fotoPerfil"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/ic_photo_camera"/>
+
+                <TextView
+                    android:id="@+id/linkFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:textSize="25dp"
+                    android:text="Foto de perfil"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/crearCuenta"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:text="Crear una cuenta"
+            android:background="@drawable/btn_google"
+            android:textColorHint="@color/colorPrimaryText"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_height="1dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="10dp"></TableRow>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ABOUT"
+            android:textColorHint="@color/colorPrimaryText"
+            android:background="@null"/>
+
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="CONTACT"
+            android:textColorHint="@color/colorPrimaryText"
+            android:background="@null"/>
+
+
+    </LinearLayout>
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>
